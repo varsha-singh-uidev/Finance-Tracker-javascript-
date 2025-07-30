@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Finance Tracker</h1>
+    <div class="top_box">
+        <h2 class="show_status">Your Balance: </h2>
+        <span class="Balance"> $0.00</span>
+    </div>
+
+    <div class="main_box">
+        <h3 class="head_text">Add Transaction</h3>
+    
+        <p class="Description">Description:</p>
+        <input class="Description_input" type="text" placeholder="Enter description" required/>
+    
+        <p class="Amount:">Amount</p>
+        <form>
+            <input class="amount_input" type="number" placeholder="Enter amount" />
+        </form>
+        
+        <select class="options">
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
+        </select>
+    
+        <button type="submit" class="Add_btn">Add Transaction</button>
+        
+        <h3 class="last_text">Transactions</h3>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

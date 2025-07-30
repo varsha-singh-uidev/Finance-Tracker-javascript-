@@ -1,0 +1,87 @@
+:root{
+    --balance-color : #28A745;
+    --text-color: #111827;
+    --button-color: #007BFF;
+    --button-hover-color: #0056B3;
+    --white-color: #fff;
+    --border-color: #CCCCCC;
+
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+h1{
+    text-align: center;
+}
+/* ===================== Top section that display the balance ===================== */
+.top_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Balance{
+   color: var(--balance-color);
+   font-size: 25px;
+   font-weight: bold;
+}
+/* ===================== main box ===================== */
+.main_box{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    max-width: 100%;
+    margin-inline: 50px;
+    gap: 10px;
+}
+form{
+    display: contents;
+}
+.amount_input{
+    flex-grow: 1;
+    max-width: 100%;
+}
+.head_text,.last_text{
+    margin: 0;
+    margin-block: 10px;
+}
+p{
+    margin: 0;
+}
+.Description_input, .amount_input, .options{
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+.Add_btn{
+    max-width: 140px;
+    padding-block: 8px;
+    padding-inline: 16px;
+    border: none;
+    border-radius: 5px;
+    color: var(--white-color);
+    background-color: var(--button-color);
+}
+.Add_btn:hover{
+    background-color: var(--button-hover-color);
+}
+/* ======================= Appending content ======================= */
+
+.last_container{
+   display: flex;
+   justify-content: space-between;
+   max-width: 100%;
+   margin-inline: 50px;
+   gap: 10px;
+   padding-block: 8px;
+   padding-inline: 10px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   border: 1px solid var(--border-color);
+}
+
